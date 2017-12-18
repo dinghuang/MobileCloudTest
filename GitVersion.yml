@@ -8,7 +8,7 @@ branches:
     mode: ContinuousDeployment
     tag: ''
     increment: Patch
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
