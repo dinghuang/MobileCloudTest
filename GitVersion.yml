@@ -1,7 +1,7 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: ContinuousDeployment
 next-version: 1.0.0
-continuous-delivery-fallback-tag: ''
+continuous-delivery-fallback-tag: 'rc'
 branches:
   master:
     regex: master
