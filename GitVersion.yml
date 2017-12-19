@@ -1,6 +1,5 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: ContinuousDeployment
-next-version: 1.0.0
 continuous-delivery-fallback-tag: ''
 branches:
   master:
@@ -8,7 +7,7 @@ branches:
     mode: ContinuousDeployment
     tag: ''
     increment: Patch
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
@@ -61,9 +60,9 @@ branches:
   develop:
     regex: dev(elop)?(ment)?$
     mode: ContinuousDeployment
-    tag: unstable
+    tag: alpha
     increment: Minor
-    prevent-increment-of-merged-branch-version: true
+    prevent-increment-of-merged-branch-version: false
     track-merge-target: true
     tracks-release-branches: true
     is-release-branch: false
